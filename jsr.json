@@ -1,0 +1,9 @@
+{
+  "name": "@jvitormelo/extenso-br",
+  "version": "1.0.0",
+  "description": "Reescrita moderna e minimalista para converter valores monetários por extenso em português brasileiro",
+  "exports": "./src/index.ts",
+  "publish": {
+    "exclude": ["**/*.test.ts"]
+  }
+}
