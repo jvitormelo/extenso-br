@@ -1,7 +1,7 @@
 {
 	"name": "extenso-br",
 	"version": "1.0.0",
-	"description": "Convert numbers to words in Brazilian Portuguese (número por extenso)",
+	"description": "Reescrita moderna e minimalista para converter valores monetários por extenso em português brasileiro",
 	"type": "module",
 	"exports": {
 		".": {
@@ -12,7 +12,8 @@
 	"main": "./src/index.ts",
 	"types": "./src/index.ts",
 	"files": [
-		"src"
+		"src",
+		"!src/**/*.test.ts"
 	],
 	"scripts": {
 		"test": "bun test",
