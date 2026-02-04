@@ -31,12 +31,12 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/USERNAME/extenso-br.git"
+		"url": "git+https://github.com/jvitormelo/extenso-br.git"
 	},
 	"bugs": {
-		"url": "https://github.com/USERNAME/extenso-br/issues"
+		"url": "https://github.com/jvitormelo/extenso-br/issues"
 	},
-	"homepage": "https://github.com/USERNAME/extenso-br#readme",
+	"homepage": "https://github.com/jvitormelo/extenso-br#readme",
 	"devDependencies": {
 		"@types/bun": "latest"
 	},
