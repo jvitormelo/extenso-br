@@ -2,7 +2,7 @@
 
 Reescrita moderna 0 depedência e minimalista do [extenso](https://github.com/theuves/extenso) para português brasileiro.
 
-Converte valores monetários para texto por extenso, seguindo o padrão oficial para documentos governamentais (Lei 14.133).
+Converte valores monetários para texto por extenso, seguindo o padrão oficial para documentos governamentais.
 
 ```ts
 import { currencyToWords } from "extenso-br";
