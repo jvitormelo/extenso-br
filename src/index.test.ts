@@ -140,6 +140,12 @@ describe("currencyToWords", () => {
     it("converts 2000000000,00 to dois bilhões de reais", () => {
       expect(currencyToWords("2000000000,00")).toBe("dois bilhões de reais");
     });
+
+    it("converts 43151336237,82 with commas between scale groups (government standard)", () => {
+      expect(currencyToWords("43151336237,82")).toBe(
+        "quarenta e três bilhões, cento e cinquenta e um milhões, trezentos e trinta e seis mil, duzentos e trinta e sete reais e oitenta e dois centavos"
+      );
+    });
   });
 
   describe("reais and centavos combined", () => {
@@ -266,7 +272,9 @@ describe("currencyToWords", () => {
     });
 
     it("converts 101,11 to cento e um reais e onze centavos", () => {
-      expect(currencyToWords("101,11")).toBe("cento e um reais e onze centavos");
+      expect(currencyToWords("101,11")).toBe(
+        "cento e um reais e onze centavos"
+      );
     });
 
     it("converts 1000,99 to mil reais e noventa e nove centavos", () => {

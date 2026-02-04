@@ -1,4 +1,4 @@
-import { writeCurrency } from "./write-currency"
+import { writeCurrency } from "./write-currency";
 
 /**
  * Converts a Brazilian currency value string to words.
@@ -14,24 +14,28 @@ import { writeCurrency } from "./write-currency"
  */
 export function currencyToWords(value: string): string {
   if (typeof value !== "string") {
-    throw new Error("Input must be a string")
+    throw new Error("Input must be a string");
   }
 
   if (!value.includes(",")) {
-    throw new Error('Invalid format: expected comma decimal separator (e.g., "1234,56")')
+    throw new Error(
+      'Invalid format: expected comma decimal separator (e.g., "1234,56")'
+    );
   }
 
-  const parts = value.split(",")
-  const integerPart = parts[0]!
-  const decimalPart = parts[1]
+  const parts = value.split(",");
+  const integerPart = parts[0]!;
+  const decimalPart = parts[1];
 
   if (decimalPart === undefined || decimalPart.length !== 2) {
-    throw new Error('Invalid format: expected 2 decimal places (e.g., "1234,56")')
+    throw new Error(
+      'Invalid format: expected 2 decimal places (e.g., "1234,56")'
+    );
   }
 
   if (!/^\d+$/.test(integerPart) || !/^\d{2}$/.test(decimalPart)) {
-    throw new Error("Invalid format: non-numeric characters found")
+    throw new Error("Invalid format: non-numeric characters found");
   }
 
-  return writeCurrency(integerPart, decimalPart)
+  return writeCurrency(integerPart, decimalPart);
 }
