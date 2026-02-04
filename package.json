@@ -17,7 +17,8 @@
 	],
 	"scripts": {
 		"test": "bun test",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --noEmit",
+		"publish:jsr": "deno publish"
 	},
 	"keywords": [
 		"extenso",
