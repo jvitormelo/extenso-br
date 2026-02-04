@@ -1,10 +1,42 @@
 {
 	"name": "extenso-br",
-	"module": "src/index.ts",
+	"version": "1.0.0",
+	"description": "Convert numbers to words in Brazilian Portuguese (número por extenso)",
 	"type": "module",
-	"scripts": {
-		"test": "bun test"
+	"exports": {
+		".": {
+			"import": "./src/index.ts",
+			"types": "./src/index.ts"
+		}
 	},
+	"main": "./src/index.ts",
+	"types": "./src/index.ts",
+	"files": [
+		"src"
+	],
+	"scripts": {
+		"test": "bun test",
+		"typecheck": "tsc --noEmit"
+	},
+	"keywords": [
+		"extenso",
+		"numero-por-extenso",
+		"number-to-words",
+		"brazilian-portuguese",
+		"portugues",
+		"currency",
+		"reais",
+		"brl"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/USERNAME/extenso-br.git"
+	},
+	"bugs": {
+		"url": "https://github.com/USERNAME/extenso-br/issues"
+	},
+	"homepage": "https://github.com/USERNAME/extenso-br#readme",
 	"devDependencies": {
 		"@types/bun": "latest"
 	},
