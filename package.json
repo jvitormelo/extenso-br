@@ -1,6 +1,6 @@
 {
 	"name": "extenso-br",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Reescrita moderna e minimalista para converter valores monetários por extenso em português brasileiro",
 	"type": "module",
 	"exports": {
